@@ -1,11 +1,15 @@
-import { createHashHistory } from '@remix-run/router'
 import React from 'react'
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import About from "./screens/About";
 
 const App = () => {
   return (
-    <div>App</div>
+    <Router>
+      <Routes>
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </Router>
   )
 }
-
 
 export default App
