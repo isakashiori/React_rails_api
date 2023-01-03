@@ -1,24 +1,23 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react'
 
 const Header = () => {
   return (
-    <Header>
+    <header>
         <div className='logo'>
             <h3>ロゴ</h3>
         </div>
 
         <nav>
-            <li>
-                <ul>
-                  <Link to="/about">About</Link>
-                </ul>
-                <ul>
-                  <Link to="/login">Login</Link>
-                </ul>
-            </li>
+            <ul>
+                <li>
+                    <a href='#'>About</a>
+                </li>
+                <li>
+                    <a href='#'>Login</a>
+                </li>
+            </ul>
         </nav>
-    </Header>
+    </header>
   )
 }
 
